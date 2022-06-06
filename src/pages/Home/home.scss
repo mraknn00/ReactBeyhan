@@ -1,0 +1,331 @@
+.smart{
+
+    background-image: url(/img/smart.png);
+    background-size: cover;
+    width: 260px;
+    height: 111px;
+
+}
+
+.promethan{
+
+    background-image: url(/img/pro.png);
+    background-size: cover;
+    width: 260px;
+    height: 111px;
+
+}
+
+.microsoft{
+    background-image: url(/img/microsoft.png);
+    background-size: cover;
+    width: 235px;
+    height: 50px;
+
+}
+.vestel{
+    background-image: url(/img/vestel.png);
+    background-size: cover;
+    width: 235px;
+    height: 50px;
+
+}
+
+.beyhan{
+
+    background-image: url(/img/beyhan2.png);
+    width: 183px;
+    height: 87px;
+    display: inline-flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.ege{
+
+    background-image: url(/img/egelogo.png);
+    width: 162px;
+    height: 87px;
+    display: inline-flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.smartt{
+
+    background-image: url(/img/smart.png);
+    width: 188px;
+    height: 86px;
+    display: inline-flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.herofotobir{
+
+    background-image: url(/img/yeni5.jpg)
+
+}
+.herofotoiki{
+
+    background-image: url(/img/yeni1.jpg)
+
+}
+.herofotouc{
+
+    background-image: url(/img/yeni2.jpg)
+
+}
+
+.clients .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+
+    .clients .swiper-pagination .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background-color: #fff;
+        opacity: 1;
+    }
+
+    .clients .swiper-pagination .swiper-pagination-bullet-active {
+        background-color: #4380d9;
+    }
+
+.clients .swiper-slide img {
+    opacity: 0.5;
+    transition: 0.3s;
+    filter: grayscale(100);
+}
+
+    .clients .swiper-slide img:hover {
+        filter: none;
+        opacity: 1;
+    }
+
+
+.featured {
+    position: relative;
+    z-index: 2;
+}
+
+    .featured .icon-box {
+        padding: 40px 30px;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        background: #fff;
+        transition: all ease-in-out 0.3s;
+        height: 100%;
+        text-align: center;
+    }
+
+        .featured .icon-box i {
+            color: #0d6efd;
+            font-size: 42px;
+            margin-bottom: 15px;
+            display: block;
+            line-height: 0;
+        }
+
+        .featured .icon-box h3 {
+            font-weight: 700;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+            .featured .icon-box h3 a {
+                color: #545454;
+                transition: 0.3s;
+            }
+
+        .featured .icon-box p {
+            color: #545454;
+            line-height: 24px;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        .featured .icon-box:hover {
+            background: #c8d5d7;
+        }
+
+            .featured .icon-box:hover i, .featured .icon-box:hover h3 a, .featured .icon-box:hover p {
+                color: #fff;
+            }
+
+#hero {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: -120px;
+    position: relative;
+    z-index: 1;
+}
+
+    #hero .carousel-item {
+        width: 100%;
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+        #hero .carousel-item::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
+
+    #hero .carousel-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-bottom: 120px;
+    }
+
+    #hero .carousel-content {
+        text-align: center;
+    }
+
+    #hero h2 {
+        color: #2e2e2e;
+        margin-bottom: 30px;
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+        #hero h2 span {
+            color: #e96b56;
+        }
+
+    #hero p {
+        width: 80%;
+        -webkit-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+        margin: 0 auto 30px auto;
+    }
+
+    #hero .carousel-inner .carousel-item {
+        transition-property: opacity;
+        background-position: center top;
+    }
+
+    #hero .carousel-inner .carousel-item,
+    #hero .carousel-inner .active.carousel-item-start,
+    #hero .carousel-inner .active.carousel-item-end {
+        opacity: 0;
+    }
+
+    #hero .carousel-inner .active,
+    #hero .carousel-inner .carousel-item-next.carousel-item-start,
+    #hero .carousel-inner .carousel-item-prev.carousel-item-end {
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+        #hero .carousel-inner .carousel-item-next,
+        #hero .carousel-inner .carousel-item-prev,
+        #hero .carousel-inner .active.carousel-item-start,
+        #hero .carousel-inner .active.carousel-item-end {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+
+    #hero .carousel-control-prev, #hero .carousel-control-next {
+        width: 10%;
+    }
+
+    #hero .carousel-control-next-icon, #hero .carousel-control-prev-icon {
+        background: none;
+        font-size: 48px;
+        line-height: 1;
+        width: auto;
+        height: auto;
+        color: #545454;
+    }
+
+    #hero .carousel-indicators li {
+        cursor: pointer;
+        background: #4380d9;
+        overflow: hidden;
+        border: 0;
+        width: 12px;
+        height: 12px;
+        border-radius: 50px;
+        margin-bottom: 180px;
+        opacity: 0.2;
+    }
+
+        #hero .carousel-indicators li.active {
+            opacity: 1;
+        }
+
+    #hero .btn-get-started {
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 12px 32px;
+        border-radius: 50px;
+        transition: 0.5s;
+        line-height: 1;
+        margin: 10px;
+        color: #fff;
+        -webkit-animation-delay: 0.8s;
+        animation-delay: 0.8s;
+        border: 2px solid #e96b56;
+        background: #e96b56;
+    }
+
+        #hero .btn-get-started:hover {
+            background: transparent;
+            color: #e96b56;
+            text-decoration: none;
+        }
+     @media (max-height: 768px), (max-width: 720px) {
+    #hero {
+        margin-bottom: 60px;
+    }
+
+        #hero .carousel-container {
+            padding-bottom: 0;
+        }
+
+        #hero .carousel-indicators li {
+            margin-bottom: 0;
+        }
+}
+
+    @media (max-width: 768px) {
+    #hero {
+        height: 90vh;
+    }
+
+        #hero .carousel-item {
+            height: 90vh;
+        }
+}
+
+    @media (min-width: 1024px) {
+    #hero p {
+        width: 50%;
+    }
+
+    #hero .carousel-control-prev, #hero .carousel-control-next {
+        width: 5%;
+    }
+}

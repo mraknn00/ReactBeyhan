@@ -1,0 +1,105 @@
+.fatih{
+    background-image: url("/img/fatih.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    display: inline-flex;
+    width: 150px; 
+}
+
+.ramiz{
+    background-image: url("/img/ramiz.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    display: inline-flex;
+    width: 150px; 
+}
+.cihangir{
+    background-image: url("/img/cihangir.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    display: inline-flex;
+    width: 150px; 
+}
+.akin
+{
+    background-image: url("/img/akin.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    display: inline-flex;
+    width: 150px; 
+}
+.fazli{
+
+    background-image: url("/img/fazli.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    display: inline-flex;
+    width: 150px;   
+
+}
+
+
+.fttbir{
+    background-image: url("/img/hakbir.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.fttiki{
+    background-image: url("/img/hakiki.jpg");
+    background-size: cover;
+    height: 344px;
+}
+
+.backimage {
+    margin-top: 20px;
+    padding: 200px;
+    background-image: url("/img/yeni1.jpg");
+    background-repeat: repeat-y, repeat-x;
+    background-size: cover;
+}
+
+.yazi{
+
+    color: black;
+
+}
+
+.breadcrumbs {
+    padding: 20px 0 20px 0;
+    background: #f7f7f7;
+    border-bottom: 1px solid #ededed;
+    margin-bottom: 40px;
+}
+
+    .breadcrumbs h2 {
+        font-size: 28px;
+        font-weight: 700;
+        color: #0dcaf0;
+    }
+
+    .breadcrumbs ol {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0 0 5px 0;
+        margin: 0;
+        font-size: 14px;
+    }
+
+        .breadcrumbs ol li + li {
+            padding-left: 10px;
+        }
+
+            .breadcrumbs ol li + li::before {
+                display: inline-block;
+                padding-right: 10px;
+                color: #6e6e6e;
+                content: "/";
+            }
