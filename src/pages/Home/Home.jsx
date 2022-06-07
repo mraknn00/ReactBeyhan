@@ -1,5 +1,4 @@
 import "./home.scss"
-
 const Home  = () => {
 
     return(
@@ -90,13 +89,7 @@ const Home  = () => {
                     </div>
 
                 </div>
-            </section>
-            <section id="clients" className="clients">
-                <div className="container">
-          
-        
-      </div>
-    </section>  </>
+            </section> </>
 
     )
 

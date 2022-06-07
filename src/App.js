@@ -13,6 +13,7 @@ import Support from './pages/Support/Support';
 import Xena from './pages/Xena/Xena';
 import Contact from './pages/Contact/Contact';
 import Franchise from './pages/Franchise/Franchise';
+import Login from './pages/Login/Login';
 const App = () => {
   return (
     <BrowserRouter>
@@ -21,11 +22,12 @@ const App = () => {
            <Route path='/'></Route>
             <Route index element={<Home/>}></Route>
             <Route path="AnaSayfa" element={<Home/>}></Route>
-            <Route path="Hakkımızda" element={<About/>}></Route>
+            <Route path="Hakkimizda" element={<About/>}></Route>
             <Route path="Destek" element={<Support/>}></Route>
             <Route path="Xena" element={<Xena/>}></Route>
             <Route path="iletisim" element={<Contact/>}></Route>
             <Route path="BayiBasvuru" element={<Franchise/>}></Route>
+            <Route path="Login" element={<Login/>}></Route>
        </Routes>
       
        

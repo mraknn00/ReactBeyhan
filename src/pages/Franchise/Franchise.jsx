@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./franchise.scss"
 
 const Franchise =  () =>{
@@ -8,7 +9,7 @@ const Franchise =  () =>{
         <div className="wrapper wrapper--w680">
             <div className="card card-4">
                 <div className="card-body">
-                    <div className="franchiselogo"></div>
+                    <h2 className="franchiselogo"><Link to="AnaSayfa"></Link></h2>
                     <form method="POST">
                         <div className="row row-space">
                             <div className="col-2">
@@ -108,12 +109,12 @@ const Franchise =  () =>{
 
                         <div className="form-check">
                         <input className="form-check-input" type="checkbox" value="" id="defaultCheck1"  required oninvalid="this.setCustomValidity('Lütfen Aydınlatma Metnini İşaretleyiniz.')"oninput="this.setCustomValidity('')"></input>
-                        <label className="form-check-label" for="flexCheckChecked"><b> Aydınlatma Metnini </b><span>Okudum</span></label>
+                        <label className="form-check-label" for="flexCheckChecked"><b style={{ color: "blue" }}> Aydınlatma Metnini </b><span>Okudum</span></label>
                         </div>
                                 <br/>
                         <div className="p-t-15">
                       
-                         &nbsp;&nbsp;&nbsp;  <button className="btn btn--radius-2 btn--blue" type="submit">Başvuruyu Gönder</button>
+                         &nbsp;&nbsp;&nbsp;  <button className="btn btn--radius-2 btn--blue" type="submit" style={{ color: "white" }}>Başvuruyu Gönder</button>
                         </div>
 
                     </form>

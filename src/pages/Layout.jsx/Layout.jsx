@@ -4,7 +4,14 @@ import { useLocation } from "react-router-dom";
 
 const Layout = () => {
   const { pathname } = useLocation();
-  if (pathname === "/Xena") return null;
+  if (pathname === "/Xena")   return null;
+  if (pathname === "/BayiBasvuru")  return null;
+  if (pathname === "/Login")  return null;
+
+  
+
+
+  
 
   return (
     <>
@@ -20,7 +27,7 @@ const Layout = () => {
 
           <div className="contact-info d-flex justify-content-end  align-items-center ">
             <i className="bi bi-box-arrow-in-right d-flex align-items-center ms-4">
-              <Link to="GirişYap">
+              <Link to="Login">
                 <br></br>Giriş Yap
               </Link>
             </i>
@@ -46,7 +53,7 @@ const Layout = () => {
                   to="Hakkimizda"
                   className={pathname === "/Hakkimizda" && "active"}
                 >
-                  Hakkımızda
+                  Biz Kimiz?
                 </Link>
               </li>
               <li>
@@ -66,9 +73,9 @@ const Layout = () => {
               <li>
                 <Link to="iletisim" className={pathname === "/iletisim" && "active"}>İletişim</Link>
               </li>
-              <li>
-                <button style={{ color: "white" }}>
-                  <Link to="BayiBasvuru" className={pathname === "/BayiBasvuru" && "active"}>Bayi Başvurusu</Link>
+              <li className="bayibasvuru">
+                <button>
+                  <Link to="BayiBasvuru" style={{ color: "white" }} className={pathname === "/BayiBasvuru" && "active"}>Bayi Başvurusu</Link>
                 </button>
               </li>
             </ul>

@@ -23,7 +23,7 @@ const Contact =() =>{
               <div className="info-box mb-4">
                 <i className="bx bx-map"></i>
                 <h3><b>Adres</b></h3>
-                <p><b>Erzene, Ege Üniversitesi Kampüsü, Ankara Cd. No:172/67, 35100 Bornova/İzmir</b></p>
+                <p>Erzene, Ege Üniversitesi Kampüsü, Ankara Cd. No:172/67, 35100 Bornova/İzmir</p>
               </div>
             </div>
   
@@ -31,7 +31,7 @@ const Contact =() =>{
               <div className="info-box  mb-4">
                 <i className="bx bx-envelope"></i>
                 <h3><b>E-Mail</b></h3>
-                <p><b><a href="mailto:info@beyhanbilgi.com" mystyle="color:  black">info@beyhanbilgi.com</a></b></p>
+                <p><a href="mailto:info@beyhanbilgi.com" mystyle="color:  black">info@beyhanbilgi.com</a></p>
               </div>
             </div>
   
@@ -39,7 +39,7 @@ const Contact =() =>{
               <div className="info-box  mb-4">
                 <i className="bx bx-phone-call"></i>
                 <h3><b>Telefon</b></h3>
-               <p><b><a href="tel:08507567457" mystyle="color:  black">0 850 756 745</a></b></p>
+               <p><a href="tel:08507567457" mystyle="color:  black">0 850 756 745</a></p>
               </div>
             </div>
   
@@ -47,7 +47,7 @@ const Contact =() =>{
   
           <div className="row">
           <div className="col-lg-6">
-            <iframe class="mb-4 mb-lg-0 ıframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.320785060451!2d27.2320297!3d38.45715489999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b97d083563e1c5%3A0x837c41b98086e4f9!2sBeyhan%20Bilgi%20Teknolojileri%20Yaz%C4%B1l%C4%B1m%20Pazarlama%20Ltd.%20%C5%9Eti.!5e0!3m2!1str!2str!4v1653292102604!5m2!1str!2str"></iframe>
+            <iframe className="mb-4 mb-lg-0 ıframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.320785060451!2d27.2320297!3d38.45715489999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b97d083563e1c5%3A0x837c41b98086e4f9!2sBeyhan%20Bilgi%20Teknolojileri%20Yaz%C4%B1l%C4%B1m%20Pazarlama%20Ltd.%20%C5%9Eti.!5e0!3m2!1str!2str!4v1653292102604!5m2!1str!2str"></iframe>
           </div>
           
           <div className="col-lg-6">

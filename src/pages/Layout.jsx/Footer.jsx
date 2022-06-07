@@ -7,6 +7,8 @@ const Footer =() =>{
 const {pathname } = useLocation();
 if (pathname === "/Xena") 
 return null;
+if (pathname === "/BayiBasvuru")  return null;
+if (pathname === "/Login")  return null;
 
     return(
 
@@ -19,7 +21,7 @@ return null;
                         <h4>Bağlantılar</h4>
                         <ul>
                             <li><i className="bx bx-chevron-right"></i><Link to="AnaSayfa">Ana Sayfa</Link></li>
-                            <li><i className="bx bx-chevron-right"></i><Link to="Hakkımızda">Hakkımızda</Link></li>
+                            <li><i className="bx bx-chevron-right"></i><Link to="Hakkimizda">Hakkımızda</Link></li>
                             <li><i className="bx bx-chevron-right"></i><Link to="Destek">Destek</Link></li>
                             <li><i className="bx bx-chevron-right"></i> <Link to="Xena">Xena</Link></li>
                             <li><i className="bx bx-chevron-right"></i><Link to="iletisim">İletişim</Link></li>

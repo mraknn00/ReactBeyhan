@@ -9,9 +9,9 @@ return(
 
       <ol>
         <li className="yazi">Ana Sayfa</li>
-        <li>Hakkımızda</li>
+        <li>Biz Kimiz?</li>
       </ol>
-      <h2>Hakkımızda</h2>
+      <h2>Biz Kimiz?</h2>
 
     </div>
   </section>
@@ -23,18 +23,24 @@ return(
           <div>
             <h3 className="font-weight-light">Biz Kimiz ?</h3>
             <p>Temelleri 1998 yılında atılan Beyhan Şirketleri, 34 yılı aşan yolculuğunda, değişimin hep bir adım önünde giderek sadece Türkiye ve Dünya’ya değer katan bir Firma olma yolunda hareket etti. Tüm faaliyetlerinde uluslararası standartlara uyum ve sürekli gelişim amacını gözeten Beyhan Şirketleri, ülkesinde yakaladığı başarıyı dünyada yakalama hedefine adım adım ilerleyen bir kurum oldu.</p>
+            <br></br>
             <h3 className="font-weight-light">Hedef Ve İlkeler</h3>
             <p>Beyhan Şirketleri, çalışanlarıyla birlikte, sağlıklı gelişmeyi, güvenli teknolojiyi, evrensel kalite ve standartlarda ürün ve hizmetler sunmayı amaçlıyor. Ülkesi, müşterileri, ortakları ve bayileri için güvenilirlik, devamlılık ve saygınlık simgesi olmayı hedefliyor.
               Müşterilerimize ve ülkemize değer katmak, müşterilerimizin beklentilerine kalite ve istikrarla karşılık vermek önceliğimizdir. Ürünlerimize sahip çıkmak ve satış sonrasında da müşterilerimizin yanında olmak görevimizdir.
             </p>
+            <br></br>
             <h3 className="font-weight-light">Daima “en iyi” olmak, vazgeçilmez hedefimizdir.</h3>
             <p>Kalitede, hizmette ve bayi ilişkilerimizde çalışanlarımız için sunulan yatırım seçeneklerinde en iyi olmak ve başından itibaren çalıştığımız müşterilerimiz gözünde sahip olduğumuz bu imajı korumak ana hedefimizdir. Bu hedefe ulaşmak üzere faaliyet gösterilen alanlarda yönetimi üstlenmek ve kendi pazarımızda lider olmak temel ilkemizdir.</p>
+            <br></br>
             <h3 className="font-weight-light">En önemli sermayemiz, insan kaynağımızdır.</h3>
             <p>Ürün ve hizmetlerimizin kalitesi çalışanlarımızın kalitesiyle başlar. En iyi personeli ve yetişkin insan gücünü bizimle çalışmak istemesini sağlamak ve istihdam etmek, insanımızın yeteneklerinden ve yaratıcılığından azami fayda sağlamak; verimliliklerini artırmak, gelişmelerine imkân tanımak, iş birliği ve dayanışmanın yeşerdiği bir çalışma ortamı yaratmak seçtiğimiz yoldur.</p>
+            <br></br>
             <h3 className="font-weight-light">Amacımız, sürekli gelişmek için kaynak yaratmaktır.</h3>
             <p>Hizmetin sürekliliğini sağlamak üzere, gerekli yatırımları gerçekleştirebilmek; küçük ve büyük tasarrufların birleşmesini teşvik etmek üzere, sermayenin hakkı olan kârı, bayi ve çalışanlarımıza sağlamak; çalışanlarımızın ve toplumun ekonomik ve sosyal gelişmesine yardımcı olmak üzere, faaliyetlerden kaynak yaratmak ve tüm kaynakların akılcı kullanımını sağlayarak sağlıklı bir ekonomik yaşam sağlamak, ana ilkelerimizdendir</p>
+            <br></br>
             <h3 className="font-weight-light">Gücümüzü aldığımız Türk ekonomisine güç katmayı hedef alırız.</h3>
             <p> Müşterilerimiz için değer yaratmak, beklentilerine kalite ve istikrarla karşılık vermek ilk önceliğimizdir. Ürünlerimize sahip çıkmak ve satış sonrasında da müşterilerimizin yanında olmak görevimizdir.</p>
+            <br></br>
             <h3 className="font-weight-light">Üstün iş ahlakı ve dürüst çalışma ilkelerine uymak, düsturumuzdur.</h3>
             <p>Tüm ilişkilerimizde adilane, karşılıklı yarar sağlamak amacıyla, iyi niyet ve anlayışla davranmak, yasalara ve ahlak kurallarına daima uymak ilkemizdir.
 
