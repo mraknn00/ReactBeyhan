@@ -1,5 +1,5 @@
 import "./about.scss"
-
+import { Link } from "react-router-dom";
 const About =() => {
 
 return(
@@ -8,7 +8,7 @@ return(
     <div className="container">
 
       <ol>
-        <li className="yazi">Ana Sayfa</li>
+        <li className="yazi"><Link to="/AnaSayfa">Ana Sayfa</Link></li>
         <li>Biz Kimiz?</li>
       </ol>
       <h2>Biz Kimiz?</h2>

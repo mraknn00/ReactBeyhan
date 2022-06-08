@@ -1,67 +1,49 @@
 import "./home.scss"
-const Home  = () => {
 
+import { Carousel } from 'react-bootstrap';
+import ReactPlayer from 'react-player'
+const Home  = () => {
     return(
 
-        <><section id="hero">
-            <div className="hero-container">
-                <div id="heroCarousel" data-bs-interval="15000" className="carousel slide carousel-fade" data-bs-ride="carousel">
-
-                    <ol className="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-                    <div className="carousel-inner" role="listbox">
-
-
-
-                        <div className="carousel-item active herofotoiki">
-                            <div className="carousel-container">
-                                <video playsInline="playsInline" autoPlay="autoPlay" muted="muted" loop="loop">
-
-                                </video>
-                                <div className="carousel-content">
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div className="carousel-item herofotobir">
-                            <div className="carousel-container">
-                                <div className="carousel-content">
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <div className="carousel-item herofotoiki">
-                            <div className="carousel-container">
-                                <div className="carousel-content">
-                                </div>
-                            </div>
-                        </div>
+        <>
+        
+        <Carousel>  
+             <Carousel.Item>
+             <ReactPlayer
+            url='/byhnvideo.mp4'
+            muted
+            playsInline
+            width= "500%"
+           height= "650px"       
+            playing={true}
+          />
+                 <Carousel.Caption>
+                     </Carousel.Caption>
+                             </Carousel.Item>
+                             <Carousel.Item>
+                             <div className=" d-block w-100 herofotouc"></div>
+                                                      <Carousel.Caption>
+                                                    </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                             <div className=" d-block w-100 herofotobir"></div>
+                                                      <Carousel.Caption>
+                                                    </Carousel.Caption>
+                                    </Carousel.Item>
+                                    
+                            <Carousel.Item>
+                            <div className=" d-block w-100 herofotoiki"></div>
+                    <Carousel.Caption>
+              </Carousel.Caption>
+         </Carousel.Item>
+    </Carousel>
 
 
-                        <div className="carousel-item herofotouc">
-                            <div className="carousel-container">
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-                <a className="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-                </a>
-
-                <a className="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-                    <span className="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-                </a>
-
-            </div>
-
-        </section><section id="featured" className="featured">
+        
+        
+        
+        
+        <section id="featured" className="featured">
                 <div className="container">
 
                     <div className="row">
@@ -89,8 +71,9 @@ const Home  = () => {
                     </div>
 
                 </div>
-            </section> </>
-
+            </section> 
+        
+      </>
     )
 
 }

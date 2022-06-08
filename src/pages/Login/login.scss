@@ -41,6 +41,7 @@
     .text-wrap {
         background: #0d6efd;
         color: #fff;
+        border-radius: 20px
     }
       .text-wrap .text h2 {
         font-weight: 900;
@@ -48,6 +49,8 @@
     
     .login-wrap {
       position: relative;
-      background: #fff; }
+      background: #fff;
+      border-radius: 20px }
       .login-wrap h3 {
         font-weight: 300; }
+        

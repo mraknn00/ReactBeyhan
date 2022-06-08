@@ -1,5 +1,5 @@
 import "./contact.scss"
-
+import { Link } from "react-router-dom";
 const Contact =() =>{
 
     return(
@@ -8,7 +8,7 @@ const Contact =() =>{
       <div className="container">
 
         <ol>
-          <li><a href="~/Home/Index">Ana Sayfa</a></li>
+          <li><Link to="/AnaSayfa">Ana Sayfa</Link></li>
           <li>İletişim</li>
         </ol>
         <h2>İletişim</h2>

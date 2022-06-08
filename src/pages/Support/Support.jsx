@@ -1,5 +1,5 @@
 import "./support.scss"
-
+import { Link } from "react-router-dom";
 const Support = () =>{
 
 return(
@@ -8,7 +8,7 @@ return(
     <div className="container">
 
       <ol>
-        <li><a href="/home" className="link"> Ana Sayfa</a></li>
+        <li><Link to="/AnaSayfa">Ana Sayfa</Link></li>
         <li>Destek</li>
       </ol>
       <h2>Destek</h2>
