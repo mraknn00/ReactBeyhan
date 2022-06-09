@@ -1,7 +1,6 @@
 import "./home.scss"
 
 import { Carousel } from 'react-bootstrap';
-import ReactPlayer from 'react-player'
 const Home  = () => {
     return(
 
@@ -9,14 +8,7 @@ const Home  = () => {
         
         <Carousel>  
              <Carousel.Item>
-             <ReactPlayer
-            url='/byhnvideo.mp4'
-            muted
-            playsInline
-            width= "500%"
-           height= "650px"       
-            playing={true}
-          />
+             <div className=" d-block w-100 herofotoiki"></div>
                  <Carousel.Caption>
                      </Carousel.Caption>
                              </Carousel.Item>
@@ -30,9 +22,8 @@ const Home  = () => {
                                                       <Carousel.Caption>
                                                     </Carousel.Caption>
                                     </Carousel.Item>
-                                    
                             <Carousel.Item>
-                            <div className=" d-block w-100 herofotoiki"></div>
+                            <div className=" d-block w-100 herofotodort"></div>
                     <Carousel.Caption>
               </Carousel.Caption>
          </Carousel.Item>
