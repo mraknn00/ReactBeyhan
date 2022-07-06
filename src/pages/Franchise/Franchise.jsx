@@ -1,8 +1,41 @@
+import React from 'react'
 import { Link } from "react-router-dom";
+import { useSelector, useDispatch } from 'react-redux'
+import { franchise } from '../../store/action/franchiseAction'
+import { useForm, Controller } from 'react-hook-form'
 import "./franchise.scss"
-
 const Franchise =  () =>{
 
+    const dispatch = useDispatch()
+    const franchdata = useSelector((state) => state.franchise)
+
+    React.useEffect(() => {
+        dispatch(franchise(franchdata))
+        console.log(franchdata)
+    }, [franchdata])
+
+      const {
+        control,
+        handleSubmit,
+      } = useForm({
+          defaultValues: {
+          firstName: '',
+          lastNumber: '',
+          phoneNumber:'',
+          email:'',
+          birthDate:'',
+          city:'',
+          taxOffice:'',
+          taxNumber:'',
+          hasInternetSales:'',
+
+        },
+      })
+    
+      const onSubmit = (data) => {
+        console.log(data)
+        dispatch(franchise(data))
+      }
     return(
 
         <div className="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
@@ -11,17 +44,34 @@ const Franchise =  () =>{
                 <div className="card-body">
                     <h2 className="franchiselogo"><Link to="AnaSayfa"></Link></h2>
                     <form method="POST">
+                    className="franchise-form"
+                    onSubmit={handleSubmit(onSubmit)}
                         <div className="row row-space">
                             <div className="col-2">
                                 <div className="input-group">
                                     <label className="label">Adınız</label>
-                                    <input className="input--style-4" type="text" name="ad" required oninvalid="this.setCustomValidity('Lütfen Adınızı Giriniz')" ></input>
+                                        <Controller
+                                        name="firstName"
+                                        control={control}
+                                        rules={{
+                                            required:true
+                                        }}>          
+                                         <input className="input--style-4" type="text" name="firstName" required oninvalid="this.setCustomValidity('Lütfen Adınızı Giriniz')" ></input>                              
+                                        </Controller>
                                 </div>
                             </div>
                             <div className="col-2">
                                 <div className="input-group">
                                     <label className="label">Soyadınız</label>
-                                    <input className="input--style-4" type="text" name="soyad" required oninvalid="this.setCustomValidity('Lütfen Soyadınızı Giriniz')"></input>
+                                    <Controller
+                                     name="lastNumber"
+                                     control={control}
+                                     rules={{
+                                         required:true
+                                     }}
+                                    >
+                                    <input className="input--style-4" type="text" name="lastNumber" required oninvalid="this.setCustomValidity('Lütfen Soyadınızı Giriniz')"></input>
+                                    </Controller>
                                 </div>
                             </div>
                         </div>
@@ -30,7 +80,14 @@ const Franchise =  () =>{
                                 <div className="input-group">
                                     <label className="label">Telefon Numaranız</label>
                                     <div className="input-group-icon">
-                                        <input className="input--style-4 js-datepicker" type="tel" name="telefon" required oninvalid="this.setCustomValidity('Lütfen Telefon Numaranızı Giriniz')"oninput="this.setCustomValidity('')"></input>
+                                        <Controller
+                                         name="phoneNumber"
+                                         control={control}
+                                         rules={{
+                                             required:true
+                                         }}>
+                                        <input className="input--style-4 js-datepicker" type="tel" name="phoneNumber" required oninvalid="this.setCustomValidity('Lütfen Telefon Numaranızı Giriniz')"oninput="this.setCustomValidity('')"></input>
+                                        </Controller>
                                         <i className="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                     </div>
 
@@ -40,7 +97,14 @@ const Franchise =  () =>{
                                 <div className="input-group">
                                     <label className="label">E-Posta Adresiniz</label>
                                     <div className="input-group-icon">
+                                         <Controller
+                                          name="email"
+                                          control={control}
+                                          rules={{
+                                              required:true
+                                          }}>
                                         <input className="input--style-4 js-datepicker" type="email" name="email" placeholder="info@beyhanbilgi.com" required oninvalid="this.setCustomValidity('Lütfen (info@beyhanyazili.com) Formatında Girin)"oninput="this.setCustomValidity('')"></input>
+                                        </Controller>
                                         <i className="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                     </div>
                                     
@@ -52,7 +116,14 @@ const Franchise =  () =>{
                                 <div className="input-group">
                                     <label className="label">Doğum Tarihiniz</label>
                                     <div className="input-group-icon">
-                                        <input className="input--style-4 js-datepicker" type="date" name="dogumtarihi"  required oninvalid="this.setCustomValidity('Lütfen Doğum Tarihinizi Giriniz')"oninput="this.setCustomValidity('')"></input>
+                                        <Controller
+                                          name="birthDate"
+                                          control={control}
+                                          rules={{
+                                              required:true
+                                          }}>
+                                        <input className="input--style-4 js-datepicker" type="date" name="birthDate"  required oninvalid="this.setCustomValidity('Lütfen Doğum Tarihinizi Giriniz')"oninput="this.setCustomValidity('')"></input>
+                                        </Controller>
                                         <i className="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                     </div>
 
@@ -61,7 +132,14 @@ const Franchise =  () =>{
                             <div className="col-2">
                                 <div className="input-group">
                                      <label className="label">Bayilik Talep Edilen Şehir</label>
-                                     <input className="input--style-4" type="text" name="vergino"></input>
+                                     <Controller
+                                       name="city"
+                                       control={control}
+                                       rules={{
+                                           required:true
+                                       }}>
+                                     <input className="input--style-4" type="text" name="city"></input>
+                                     </Controller>
                                      <div className="rs-select2 js-select-simple select--no-search">
                                 <div className="select-dropdown"></div>
                             </div>
@@ -73,20 +151,41 @@ const Franchise =  () =>{
                             <div className="col-2">
                                 <div className="input-group">
                                     <label className="label">Vergi Dairesi</label>
-                                    <input className="input--style-4" type="text" name="vergidairesi"   required  oninvalid="this.setCustomValidity('Lütfen Bu Alanı Doldurunuz')"oninput="this.setCustomValidity('')"></input>
+                                    <Controller
+                                      name="taxOffice"
+                                      control={control}
+                                      rules={{
+                                          required:true
+                                      }}>
+                                    <input className="input--style-4" type="text" name="taxOffice"   required  oninvalid="this.setCustomValidity('Lütfen Bu Alanı Doldurunuz')"oninput="this.setCustomValidity('')"></input>
+                                    </Controller>
                                 </div>
                             </div>
                             <div className="col-2">
                                 <div className="input-group">
                                     <label className="label">Vergi Numarası</label>
-                                    <input className="input--style-4" type="text" name="vergino" maxlength="10" required oninvalid="this.setCustomValidity('Lütfen Bu Alanı Doldurunuz')"oninput="this.setCustomValidity('')" ></input>
+                                    <Controller
+                                      name="taxNumber"
+                                      control={control}
+                                      rules={{
+                                          required:true
+                                      }}>
+                                    <input className="input--style-4" type="text" name="taxNumber" maxlength="10" required oninvalid="this.setCustomValidity('Lütfen Bu Alanı Doldurunuz')"oninput="this.setCustomValidity('')" ></input>
+                                    </Controller>
                                 </div>
                             </div>
                             <div className="row row-space">
                                 <div className="col-2">
                                 <div className="input-group">
                                     <label className="label">Şirket Ünvanı</label>
+                                    <Controller
+                                      name="dogumtarihi"
+                                      control={control}
+                                      rules={{
+                                          required:true
+                                      }}>
                                     <input className="input--style-4" type="text" name="sirketunvanı"  required oninvalid="this.setCustomValidity('Lütfen Bu Alanı Doldurunuz')"oninput="this.setCustomValidity('')"></input>
+                                    </Controller>
                                 </div>
                             </div>
                                <div className="col-2">
