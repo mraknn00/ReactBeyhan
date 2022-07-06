@@ -1,5 +1,5 @@
 import { combineReducers } from '@reduxjs/toolkit'
-import franchiseReducer from "./franchise.Reducer";
+import franchiseReducer from "./franchiseReducer";
 
 export default combineReducers({
     

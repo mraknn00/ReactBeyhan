@@ -9,10 +9,7 @@ const Franchise =  () =>{
     const dispatch = useDispatch()
     const franchdata = useSelector((state) => state.franchise)
 
-    React.useEffect(() => {
-        dispatch(franchise(franchdata))
-        console.log(franchdata)
-    }, [franchdata])
+
 
       const {
         control,

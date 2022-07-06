@@ -14,7 +14,11 @@ import Xena from './pages/Xena/Xena';
 import Contact from './pages/Contact/Contact';
 import Franchise from './pages/Franchise/Franchise';
 import Login from './pages/Login/Login';
+import { useDispatch, useSelector } from 'react-redux'
 const App = () => {
+
+ 
+
   return (
     <BrowserRouter>
      <Layout/>

@@ -3,7 +3,7 @@ import { configureStore, applyMiddleware } from '@reduxjs/toolkit'
 import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
 
-import rootReducer from './reducers'
+import rootReducer from './reducer'
 
 const initalState = {}
 

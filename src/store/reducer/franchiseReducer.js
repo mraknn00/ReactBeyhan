@@ -1,4 +1,4 @@
-import { FRANCHISE } from '../store/types'
+import { FRANCHISE } from '../types.js'
 
 const franchise = {
     data: {
